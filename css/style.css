@@ -1,0 +1,768 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*=========Nav Part Css Start Bellow======*/
+nav{
+   background:none;
+   position: fixed;
+   top:0;
+   left:0;
+   width:100%;
+   z-index: 99999;
+}
+.container{
+    width:960px;
+    margin: 0 auto;
+}
+.nav-main{
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    width:200px;
+    padding-top: 18px;
+    padding-left: 10px;
+}
+.menu ul li{
+    display:inline-block;
+    line-height: 80px;
+    text-decoration: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all linear 0.4s;
+
+}
+.menu ul li a{
+    color:#ffffff;
+}
+.menu ul li a:hover{
+    color:#00e0d0;
+}
+
+
+/*=========Banner Part Css Start Bellow======*/
+
+#banner{
+    background:url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:597px;
+    position: relative;
+    background-position: center center;
+}
+.banner-overly{
+    position: absolute;
+    background:rgba(46, 29, 84, 0.836);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    display: flex;
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 500;
+    color:#ffffff;
+    padding-top: 175px;
+    position: relative;
+}
+.banner-text h1::after{
+    position: absolute;
+    content: '';
+    bottom:-16px;
+    left:50%;
+    width:50px;
+    height:1px;
+    background:#00e0d0;
+}
+.banner-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:#ffffff;
+    line-height: 24px;
+    padding:0 133px;
+    padding-top: 36px;
+    padding-bottom: 54px;
+}
+.banner-text a{
+    border:1px solid#00e0d0;
+    padding:10px 10px;
+    color:#00e0d0;
+    text-transform: uppercase;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+   
+}
+.circle ul{
+    text-align: center;
+    padding-top: 127px;
+}
+.circle ul li{
+    width:13px;
+    height:13px;
+    line-height: 13px;
+    border-radius: 50%;
+    border:1px solid#ffffff;
+    display:inline-block;
+   
+}
+.circle ul li:first-child{
+    background:#00e0d0;
+    border:none;
+}
+/*=========Story Part Css Start Bellow======*/
+
+#story{
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.story-main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.story-left{
+    width:320px;
+
+}
+.story-left img{
+    width:240px;
+}
+.story-right{
+    width:550px;
+}
+.story-right h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color:#413d4b;
+    text-transform: uppercase;
+}
+.story-right p{
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:#413d4b;
+    padding-top: 13px;
+}
+.story-right h6{
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:#413d4b;
+    padding-bottom: 33px;
+   
+}
+.story-right a{
+   
+    border:1px solid#00e0d0;
+    padding:10px 10px;
+    color:#00e0d0;
+    text-transform: uppercase;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+   
+}
+/*=========Story Overly Background Part Css Start Bellow======*/
+
+
+#story-bg{
+  background:url(../images/sbg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  width:100%;
+  height:456px;
+  
+}
+
+.story-overly{
+    display: flex;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    position: absolute;
+    background:rgba(46, 29, 84, 0.836);
+    justify-content: center;
+    text-align: center;
+}
+
+
+.story-icon{
+    align-self: center;
+}
+.story-icon i{
+    width:80px;
+    height:80px;
+    line-height: 80px;
+    border-radius: 50%;
+    font-size: 46px;
+    border:2px solid #ffffff;
+    color:#ffffff;
+}
+.story-icon h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:#ffffff;
+    text-transform: uppercase;
+    padding-top: 24px;
+}
+
+/*=========expertis Part Css Start Bellow======*/
+
+#expertis{
+    padding-top: 52px;
+    padding-bottom: 80px;
+}
+
+.head{
+    text-align: center;
+}
+.head h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color:#413d4b;
+    text-transform: uppercase;
+}
+
+.head p{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:#2f2d35;
+    padding-top: 5px;
+    position: relative;
+}
+.head p::after{
+    position: absolute;
+    content: '';
+    width:50px;
+    height:2px;
+    background: #c6c4c9;
+    left:48%;
+    top:38px;
+    transform:translateY(-48%);
+}
+
+.experties-main{
+    display:flex;
+    justify-content:space-around;
+    padding-top: 80px;
+}
+
+.experties-iteam{
+    width:310px;
+    text-align: center;
+}
+.experties-iteam img{
+  
+    padding-bottom: 20px;
+}
+.experties-iteam h3{
+    color:#413d4b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+.experties-iteam p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color:#333333;
+    padding:0 20px;
+}
+
+
+
+/*=========Team Part Css Start Bellow======*/
+
+#team{
+
+    background:url(../images/team-img.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:100%;
+    height:635px;
+    background-size: cover;
+    position: relative;
+   
+}
+.team-overly{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(46, 29, 84, 0.836);
+}
+
+.team-overly .head h2{
+    color:#ffffff;
+    padding-top: 48px;
+}
+
+.team-overly .head p{
+    color:#ffffff;
+}
+.team-main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-iteam{
+    padding-top: 154px;
+    width:220px;
+    z-index: 1;
+    
+}
+
+.team-iteam h1{
+    text-align: center;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.team-iteam p{
+    text-align: center;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+.team-middle{
+   text-align: center;
+  
+}
+.team-middle h2{
+    color:#f3f3f3;
+    position: relative;
+    padding-top: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    padding-bottom: 28px;
+}
+.team-middle a {
+    border:1px solid#00e0d0;
+    padding:10px 10px;
+    color:#00e0d0;
+    text-transform: uppercase;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    
+}
+
+/*=========Works Part Css Start Bellow======*/
+
+#works{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.links-servics{
+    text-align: center;
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+.links-servics a{
+   color:#413d4b;
+    padding:6px 10px;
+    font-weight: 400;
+    text-align: center;
+    border:1px solid#dddddd;
+   
+}
+
+.works-main{
+    display: flex;
+    width:100%;
+   
+}
+.works-items{
+    width:16.67%;
+    line-height: 0;
+}
+
+.works-btn{
+    text-align: center;
+    padding-top: 56px;
+}
+.works-btn a{
+    border:1px solid#00e0d0;
+    padding:8px 14px;
+    color:#00e0d0;
+    text-transform: uppercase;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+/*=========Feedback Part Css Start Bellow======*/
+
+#feedback{
+
+    background:url(../images/feedbg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width:100%;
+    height:430px;
+    position: relative;
+
+}
+
+.feed-overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(46, 29, 84, 0.836);
+}
+
+.feed-icon{
+    text-align: center;
+   padding-top: 94px;
+   padding-bottom: 30px;
+}
+
+.feed-text{
+    text-align: center;
+}
+.feed-text p{
+    color:#ffffff;
+    line-height: 26px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding:0 110px;
+}
+
+.feed-text h2{
+    padding-top: 20px;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.feed-text h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color:#ffffff;
+    padding-top: 5px;
+}
+
+.feed-circle ul{
+    text-align: center;
+    padding-top: 32px;
+   
+}
+.feed-circle ul li{
+    width:20px;
+    height:20px;
+    line-height: 20px;
+    display: inline-block;
+    background:#ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all linear 0.4s;
+    cursor: pointer;
+}
+.feed-circle ul li:hover{
+    background:#00e0d0;
+}
+
+
+
+/*=========Contact & Partners Part Css Start Bellow======*/
+
+#contact{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.contuct-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contuct-left{
+    width:390px;
+}
+.partners{
+    width:390px;
+}
+.contuct-left h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#413d4b;
+    padding-bottom: 25px;
+}
+
+input{
+    width:100%;
+    padding:17px 20px;
+    margin-bottom: 17px;
+    border:2px solid#e5e5e5;
+    
+}
+input::placeholder{
+    font-size: 14px;
+    color:#413d4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+}
+textarea{
+    width:100%;
+    height:167px;
+    border:2px solid#e5e5e5;
+   
+}
+textarea::placeholder{
+    font-size: 14px;
+    color:#413d4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    
+}
+.contuct-left a{
+    
+    padding:14px 32px;
+    border:2px solid#00e0d0;
+    color:#00e0d0;
+    text-transform: uppercase;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+form{
+    padding-bottom: 30px;
+}
+
+.partners h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#413d4b;
+    padding-bottom: 34px;
+}
+.partner-main{
+    display: flex;
+    justify-content: space-between;
+}
+.partner-img{
+    width:160px;
+    
+}
+.partner-img img{
+    padding-bottom: 34px;
+}
+/*=========Footer Part Css Start Bellow======*/
+
+
+#footer{
+    background:url(../images/footer-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    width:100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+}
+.footer-overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background:rgba(46, 29, 84, 0.836);
+
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.footer-left{
+    width:310px;
+    z-index: 2;
+}
+.footer-left img{
+    width:128px;
+}
+.footer-left p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color:#ffffff;
+    line-height: 26px;
+    padding:0 12px;
+    padding-top: 12px;
+   
+}
+.footer-center{
+    width:310px;
+    z-index: 2;
+}
+.footer-center h2{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+   text-transform: uppercase;
+   color:#ffffff;
+    
+}
+.pt{
+    padding-top: 14px !important;
+}
+.adress-iteam{
+    display: flex;
+    padding-top: 27px;
+}
+
+.adress-iteam p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color:#ffffff;
+    line-height: 26px;
+    padding:0 19px;
+}
+.adress-iteam i{
+    font-size: 21px;
+    color:#ffffff;
+}
+
+
+
+.footer-right{
+    width:310px;
+    z-index: 2;
+   
+}
+.footer-right h2{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+   text-transform: uppercase;
+   color:#ffffff;
+   padding-bottom: 29px;
+}
+
+.footer-right-iteam {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-right-iteam input{
+    width:210px;
+    background:none;
+    
+}
+.paper-marker{
+    width:70px;
+    background:#a39cb7;
+    display:flex;
+    justify-content:center;
+    height:55px;
+}
+.paper-marker a{
+    font-size: 26px;
+    align-self:center;
+    color:#000000;
+}
+.footer-social i {
+    text-align: center;
+    width: 45px;
+    color: #ffffff;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    border: 2px solid #ffffff;
+    font-size: 15px;
+}
+.footer-right-iteam input::placeholder{
+    color:#ffffff;
+}
+
+
+.copy-right-main{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 48px;
+}
+
+.copy-right-links{
+    width: 310px;
+    z-index: 2;
+    
+}
+.copy-right-links ul li {
+    display: inline-block;
+}
+.copy-right-links ul li a{
+    color:#ffffff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 18px;
+}
+.copy-right-text {
+    z-index: 2;
+}
+.copy-right-text p{
+    color:#ffffff;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+.mb{
+    margin-bottom: 0;
+}
+/*=========Nav Part Css Start Bellow======*/
